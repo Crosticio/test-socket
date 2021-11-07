@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+}
+
+main {
+    width: 50%;
+    height: 100vh;
+    margin: auto;
+}
+
+main > section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+section > .chat {
+    flex-basis: 90%;
+    background-color: #f5f5f5;
+    padding: 0 20px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.content-text {
+    padding: 20px 0;
+}
+
+.text-message {
+    display: inline-block;
+    background-color: rgb(233, 233, 233);
+    padding: 7px 14px;
+}
+
+.bar-actions {
+    flex: 1;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    background-color: #e4e4e4;
+}
+
+.bar-actions > .message {
+    flex: 1;
+    /* border-radius: 20px; */
+    background-color: #FFFFFF;
+    border: 1px solid rgb(126, 126, 126);
+    padding: 7px 14px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Fira Code';
+    color: #3a3a3a;
+}
+
+.bar-actions > .message:focus {
+    outline: none;
+    border: 2px solid #000;
+}
+
+.bar-actions > .send-message {
+    position: relative;
+    border: none;
+    background: none;
+    background-color: #FFFFFF;
+    margin-left: 10px;
+    font-size: 35px;
+    line-height: 1;
+    padding: 0 24px;
+    border: 1px solid rgb(126, 126, 126);
+    color: #000;
+    /* border-radius: 5px; */
+    overflow: hidden;
+}
+
+.send-message > span:nth-child(1) {
+    width: 100%;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    left: -100%;
+    top: 0;
+}
+
+.send-message:hover > span:nth-child(1) {
+    left: 0;
+    transition: 0.1s ease all;
+}
+
+.send-message > span:nth-child(2) {
+    width: 2px;
+    height: 100%;
+    background:#000;
+    position: absolute;
+    top: -100%;
+    right: 0;
+}
+
+.send-message:hover > span:nth-child(2) {
+    top: 0;
+    transition: 0.1s ease all;
+    transition-delay: .1s;
+}
+
+.send-message > span:nth-child(3) {
+    width: 100%;
+    height: 2px;
+    background:#000;
+    position: absolute;
+    bottom: 0;
+    right: -100%;
+}
+
+.send-message:hover > span:nth-child(3) {
+    right: 0;
+    transition: 0.1s ease all;
+    transition-delay: .2s;
+}
+
+.send-message > span:nth-child(4) {
+    width: 2px;
+    height: 100%;
+    background:#000;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+}
+
+.send-message:hover > span:nth-child(4) {
+    bottom: 0;
+    transition: 0.1s ease all;
+    transition-delay: .3s;
+}

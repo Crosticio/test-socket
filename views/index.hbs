@@ -4,15 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
     <title>Prueba socket</title>
 </head>
 <body>
 
-    <div class="chat">
+    <main>
+        <section>
+            <div class="chat">
+            </div>
 
-    </div>
-
-    <input type="text" name="" id="message">
+            <div class="bar-actions">
+                <input type="text" name="" id="message" class="message">
+                <button class="send-message" id="sendMessage">&rtrif;
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </section>
+    </main>
 
     <script src="/socket.io/socket.io.js"></script>
     <script src="js/socket.js"></script>
